@@ -3,14 +3,12 @@ language: node_js
 sudo: false
 
 node_js:
-- 'iojs'
-- '0.12'
-- '0.10'
+- "10"
 
 addons:
   apt:
     sources: [ 'ubuntu-toolchain-r-test' ]
-    packages: [ 'libstdc++6' ]
+    packages: [ 'libstdc++6', 'libgles2-mesa-dev' ]
 
 before_install:
 - source ./scripts/start_xvfb.sh

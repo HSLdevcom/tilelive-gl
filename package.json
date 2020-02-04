@@ -19,24 +19,25 @@
     }
   ],
   "dependencies": {
-    "@mapbox/mapbox-gl-native": "^3.5.7",
+    "@mapbox/mapbox-gl-native": "^5.0.2",
     "concat-stream": "^1.5.1",
     "generic-pool": "^2.4.2",
-    "lodash": "^4.16.4",
+    "lodash": "^4.17.15",
     "pngjs": "^2.3.1",
-    "pngquant": "^1.0.0",
-    "requestretry": "^1.12.0",
-    "sphericalmercator": "^1.0.5",
+    "pngquant": "^3.0.0",
+    "requestretry": "^4.1.0",
+    "@mapbox/sphericalmercator": "^1.0.5",
     "url": "^0.11.0"
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "request": "^2.58.0",
+    "request": "^2.88.0",
     "st": "^0.5.4",
-    "tape": "^4.0.0",
-    "tilelive": "^5.7.1"
+    "tape": "^4.13.0",
+    "@mapbox/tilelive": "^5.7.1"
   },
   "scripts": {
     "test": "tape test/*.test.js"
   }
 }
+
