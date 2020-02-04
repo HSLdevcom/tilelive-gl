@@ -4,7 +4,7 @@
 
 var TileSource = require('..');
 var test = require('tape').test;
-var tilelive = require('tilelive');
+var tilelive = require('@mapbox/tilelive');
 var mbgl = TileSource.mbgl;
 
 // These calls are all effectively synchronous though they use a callback.

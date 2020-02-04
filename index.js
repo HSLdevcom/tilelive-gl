@@ -1,6 +1,6 @@
 "use strict";
 
-var sm = new (require('sphericalmercator'))();
+var sm = new (require('@mapbox/sphericalmercator'))();
 var mbgl = require('@mapbox/mapbox-gl-native');
 var Png = require('pngjs').PNG;
 var PngQuant = require('pngquant');

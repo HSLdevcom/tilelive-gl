@@ -2,7 +2,7 @@
 
 /* jshint node:true */
 
-var mbgl = require('mapbox-gl-native');
+var mbgl = require('@mapbox/mapbox-gl-native');
 var fs = require('fs');
 var path = require('path');
 

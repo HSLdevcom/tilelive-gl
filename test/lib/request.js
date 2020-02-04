@@ -2,7 +2,7 @@
 
 /* jshint node:true */
 
-var mbgl = require('mapbox-gl-native');
+var mbgl = require('@mapbox/mapbox-gl-native');
 var request = require('request');
 
 var fileSource = new mbgl.FileSource();
