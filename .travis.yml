@@ -8,7 +8,7 @@ node_js:
 addons:
   apt:
     sources: [ 'ubuntu-toolchain-r-test' ]
-    packages: [ 'libstdc++6' ]
+    packages: [ 'libstdc++6', 'libgles2-mesa-dev' ]
 
 before_install:
 - source ./scripts/start_xvfb.sh
