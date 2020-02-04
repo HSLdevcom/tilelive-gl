@@ -8,15 +8,12 @@ var path = require('path');
 
 var base = path.join(__dirname, '..');
 
-var fileSource = new mbgl.FileSource();
-fileSource.request = function(req) {
-    fs.readFile(path.join(base, req.url), function(err, data) {
-        req.respond(err, { data: data });
+var fileSource = new mbgl.Map({
+  request: function(req, callback) {
+    fs.readFile(path.join('base/path', req.url), function(err, data) {
+      callback(err, { data: data });
     });
-};
-
-fileSource.cancel = function(req) {
-    req.canceled = true;
-};
+  }
+});
 
 module.exports = fileSource;
